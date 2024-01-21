@@ -16,8 +16,6 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 /*Tabs*/
-function openCity(evt, cityName) {
-    var i, tabcontent, tablinks;
 
   /*Cacher les éléments du tab*/
     tabcontent = document.getElementsByClassName("tabcontent");

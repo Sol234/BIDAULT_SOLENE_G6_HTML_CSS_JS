@@ -114,20 +114,41 @@ body {
         }
         
 
-/*Tabs*/
-
-
-.swiper-container{
-    display: flex;
-    justify-content: center;
-}
-.swiper-slide{
-    
+/*swiper*/
+.swiper-slide{ 
     text-align: center;
     font-size: 18px;
     display: flex;
     justify-content: center;
-    align-items: center;
-  
-    
+    align-items: center;   
+}
+
+
+/*TABS*/
+.tabs-container {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+.tabs-container li {
+    cursor: pointer;
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid rgb(253, 223, 168);
+}
+
+.tabs-container li.active {
+    background-color: rgb(253, 223, 168);
+}
+
+.tabs {
+    display: none;
+    padding: 20px;
+    border: 1px solid rgb(253, 223, 168);
+}
+
+.tabs.active {
+    display: block;
 }
