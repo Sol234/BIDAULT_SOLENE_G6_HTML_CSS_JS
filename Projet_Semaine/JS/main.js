@@ -16,23 +16,19 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 /*Tabs*/
+function showTab(tabName) {
+// Masquer tous les onglets et les réinitialiser
+document.querySelectorAll('.tabs').forEach(tab => {
+tab.classList.remove('active');
+});
+document.querySelectorAll('.tabs-container li').forEach(tab => {
+tab.classList.remove('active');
+});
 
-  /*Cacher les éléments du tab*/
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-      tabcontent[i].style.display = "none";
-    }
-  
-    
-    tablinks = document.getElementsByClassName("tablinks");
-    for (i = 0; i < tablinks.length; i++) {
-      tablinks[i].className = tablinks[i].className.replace(" active", "");
-    }
-  
-    
-    document.getElementById(cityName).style.display = "block";
-    evt.currentTarget.className += " active";
-  }
-
-  /*SWIPER*/
- 
+// Afficher l'onglet actif
+ const activeTab = document.querySelector(`.${tabName}`);
+const correspondingTab = document.querySelector(`.tabs.${tabName}`);
+    if (activeTab && correspondingTab) {
+     activeTab.classList.add('active');
+    correspondingTab.classList.add('active');
+}}
