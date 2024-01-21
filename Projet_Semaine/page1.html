@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les plats de So</title>
+    <link rel="stylesheet" href="CSS/page1.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+    <body>
+        <header>
+            <h1>Les Plats de So</h1>
+            <p>Bienvenue sur notre site ! </p>
+            <script>
+                alert ("Attention, vous allez vous régaler !")
+            </script>
+            <nav>
+                <nav class="menu">
+                    <ul>
+                    <li class="bouton">
+                            <a href="formulaire.html"></a>
+                            Inscrivez-vous ! 
+                            <!--Redirection vers le formulaire d'inscription-->
+                    </li>
+                    </ul>
+                </nav>
+
+        </header>
+
+<section class="accordeon">
+    <!-- Menu burger avec des burgers-->
+    <div class="titre">
+        <p>Burgers</p>
+        <img src="img/fleche.png" alt="Chevron">
+    </div>
+    <div class="contenu">
+        <ul>
+            <li>Cheeseburger,5€</li>
+            <li>Double Cheeseburger,6€ </li>
+            <li>Veggie Burger,4€ </li>
+            <li>Chicken Burger, 6€ </li>
+        </ul>
+    </div>
+</section>
+<section class="accordeon">
+    <div class="titre">
+        <p>Chicken</p>
+        <img src="img/fleche.png" alt="Chevron">
+    </div>
+    <div class="contenu">
+        <ul>
+            <li>Chicken Wings 10 pièces, 10€</li>
+            <li>Fried Chicken 10 pièces, 10€</li>
+            <li>Chicken Wings 20 pièces, 18€</li>
+            <li>Fried Chicken 20 pièces, 18€</li>
+        </ul>
+    </div>
+</section>
+<section class="accordeon">
+    <div class="titre">
+        <p>Autres</p>
+        <img src="img/fleche.png" alt="Chevron">
+    </div>
+    <div class="contenu">
+        <ul>
+            <li> Steak frites, 12€</li>
+            <li> Salade césar, 10€</li>
+            <li> Menu kid, nuggets frites, 18€</li>
+        </ul>
+    </div>
+
+</section>
+
+
+<!-- Mettre le slider dans le main à la place de l'image -->
+<main>
+<!-- Slider -->
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide"><img src="img/tasty-fried-chicken-png-isolated-transparent-background_191095-9910.avif" alt="Fried Chicken"></div>
+        <div class="swiper-slide"><img src="img/Ap81582550926493.jpg" alt="Burger"></div>
+        <div class="swiper-slide"><img src="img/téléchargé.jpg" alt="   Steak"></div>
+     
+    </div>
+    <!--  pagination -->
+    <div class="swiper-pagination"></div>
+    <!--  navigation  -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+</div>
+
+<!-- bibliothèque Swiper -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- Initialiser le Swiper -->
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+    });
+</script>
+<!-- Tabs -->
+
+</main>
+            
+        
+
+        <footer>
+            <!--Dark Mode-->
+            <div class="container">
+                <label for="darkModeToggle">Dark Mode</label>
+                <input type="checkbox" id="darkModeToggle">
+            </div>
+        </footer>
+
+        <script src="JS/main.js"></script>
+        <script src="https://unpkg.com/swiper@7/swiper
+        bundle.min.js"></script>
+    </body>

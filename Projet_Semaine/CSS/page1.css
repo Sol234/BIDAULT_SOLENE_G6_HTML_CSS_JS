@@ -1,0 +1,133 @@
+/*Design du fond du site*/
+.bouton{
+    display:flex ;
+    display: inline-block;
+    background-color:rgb(253, 223, 168);
+    padding: 10px;
+    
+}
+a{
+    color:rgb(253, 223, 168);
+    padding: 10px;
+}
+.bouton:hover a{
+    color:rgb(253, 223, 168);
+    padding: 10px;
+    background-color: white;
+    transition:0.5s all;}
+
+body{
+    background-color: rgb(250, 241, 231);
+}
+h1{
+        background-color:rgb(253, 223, 168);
+        display: flex;
+        justify-content: center;}
+p{
+        display: flex;
+        justify-content: center;}
+
+* {
+    font-size : 16px;
+    font-family : sans-serif;
+    margin : 0; }
+
+/*Menus burgers*/
+
+.accordeon {
+    border: 1px solid rgba(146, 146, 146, 0.3);
+    Width: 80%;
+    max-width: 600px;
+    margin: 10px auto;
+}
+
+
+.titre {
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 8px 16px rgba(146, 146, 146, 0.3);
+}
+.titre img {
+    width: 20px; 
+    height: 20px;
+    transition: 0.4s;
+}
+
+.accordeon.open .titre img{
+    transform-origin: center;
+    transform: rotate(90deg);
+}
+
+
+.titre p{
+    font-weight: 700;
+}
+        
+.contenu {
+    padding: 0 20px;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+    transition: 0.4s;
+}
+    
+.accordeon.open .contenu {
+    padding: 30px 20px;
+    height: auto;
+    visibility: visible;
+}
+
+
+/*Dark Mode*/
+body {
+    transition: background-color 0.5s, color 0.5s;
+}
+        
+.container {
+    max-width: 100px;
+    margin: 50px auto;
+    padding: 10px;
+    background-color: rgb(253, 223, 168);;
+    color: #2c2c2c;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(9, 9, 9, 0.1);
+}
+
+        .dark-mode {
+            background-color: #1e1e1e;
+            color: #ffffff;
+        }
+        
+        .dark-mode .container {
+            background-color: #272626;
+            color: rgb(253, 223, 168);
+        }
+        
+        .dark-mode label {
+            color: #1c1c1c;
+        }
+        
+        .dark-mode input {
+            border-color: #191919;
+        }
+        
+
+/*Tabs*/
+
+
+.swiper-container{
+    display: flex;
+    justify-content: center;
+}
+.swiper-slide{
+    
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Inscription</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/formulaire.css">
+</head>
+
+<body>
+    <div class="header">Inscription</div>
+
+    <div class="message-error">
+        <ul></ul>
+    </div>
+
+    <form action="" method="POST" enctype="multipart/form-data">
+        <!-- Formulaire avec pseudo, email, numéro de téléphone, etc... -->
+        <div>
+            <label for="pseudo">Pseudo</label>
+            <input type="text" name="pseudo" id="pseudo">
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email">
+        </div>
+        <div>
+            <label for="numero">Numéro de téléphone</label>
+            <input type="tel" name="numero" id="numero">
+        </div>
+        <div>
+            <label for="password">Mot de passe</label>
+            <input type="password" name="password" id="password">
+        </div>
+        <div>
+            <label for="password2">Entrez à nouveau le mot de passe</label>
+            <input type="password" name="password2" id="password2">
+        </div>
+        <div>
+            <label for="ville">Ville</label>
+            <input type="text" name="ville" id="ville">
+        </div>
+
+        <!-- Boutons radios pour choisir la langue -->
+        <div class="language">
+            <p>Langue</p>
+            <p>
+                Anglais: <input type="radio" name="citizenship" class="button"><br>
+                Français: <input type="radio" name="citizenship"><br>
+                Espagnol: <input type="radio" name="citizenship">
+            </p>
+        </div>
+
+        <button type="submit">S'inscrire</button>
+    </form>
+    
+    <script src="JS/formulaire.js"></script>
+</body>
+</html>
